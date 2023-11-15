@@ -1,0 +1,19 @@
+When you are running any python packages, you could see a lot of warning (sample at the end), which takes a lot of space and distraction! 
+To avoid such porblem , use specific command! 
+Command for Jupyter notebook: 
+"import warnings
+warnings.simplefilter('ignore')"
+
+This will eliminate the unwanted warnings! 
+
+But be careful, sometimes "warning" provide elaborate important information about our analysis pipeline!
+
+Warning samples: 
+home/drdx/babupersonal/lab/lib/python3.10/site-packages/anndata/_core/anndata.py:1113: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  if not is_categorical_dtype(df_full[k]):
+/home/drdx/babupersonal/lab/lib/python3.10/site-packages/anndata/_core/anndata.py:1230: ImplicitModificationWarning: Trying to modify attribute `.obs` of view, initializing view as actual.
+  df[key] = c
+/home/drdx/babupersonal/lab/lib/python3.10/site-packages/scanpy/plotting/_tools/scatterplots.py:1207: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+
+
+..... Babu
